@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+p,h1,li{
+    font-family:Outfit;
+    font-size: 20px;
+}
+
+h1:hover{
+    cursor:pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+h1{
+    font-size: 25px;
+    color: white;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+p{
+   color: hsl(215, 51%, 70%);
+   margin: 5px 5px 5px 0px;
+}
+
+
+
+
+.card{
+    position: absolute;
+    padding: 20px;
+    width: 375px;
+    height: auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.card .main_img{
+    width: 335px;
+    border-radius: 15px;
+    height: 335px;
+    border: solid 1px  hsl(178, 100%, 50%);
+}
+
+.card  .wrap_img:hover .main_img{
+    opacity: 0.4;
+    background-color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card .wrap_img{
+    border-radius: 15px;
+    cursor: pointer;
+    width:  335px;
+    height: 335px;
+    
+    background-color: hsl(178, 100%, 50%);
+}
+
+
+
+
+.card ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card ul li:nth-child(1){
+    
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.card ul li:nth-child(1) p{
+    color:hsl(178, 100%, 50%);
+    
+}
+
+.card ul li:nth-child(2){
+    
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.card ul li .img_1{
+    width: 20px;
+    padding: 10px 10px 10px 0px;
+}
+
+
+.card .stats{
+    margin:20px 0px;
+}
+
+.card ul li .img_2{
+    width: 30px;
+    padding: 5px 5px 5px 0px;
+}
+
+.card .ref{
+    border-top:2px solid hsl(215, 32%, 27%);
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.card .ref img{
+    border-radius: 50%;
+    border: 2px white solid;
+    width: 45px;
+    margin: 10px 10px 10px 0px;
+}
+.card .ref p{
+    color: white;
+    font-size: 17px;
+}
+
+.card .ref p::before{
+    content: "Creation of ";
+    color: hsl(215, 51%, 70%);
+}
+.card .ref p:hover{
+    cursor:pointer;
+    color: hsl(178, 100%, 50%);
+}

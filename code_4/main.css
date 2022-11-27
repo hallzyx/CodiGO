@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+.cabeza{
+    position: relative;
+    background: rgb(255, 132, 0);
+    width: 200px;
+    height:200px;
+    left: 600px;
+    top: 50px;
+
+}
+
+.ojo{
+    position: absolute;
+    background: red;
+    width: 35px;
+    height: 35px;
+    
+}
+.ojo:nth-child(1){
+    left: 40px;
+    top: 30px;
+}
+
+.ojo:nth-child(2){
+    right:40px;
+    top:30px;
+}
+
+.boca{
+    position: absolute;
+    background:red;
+    width: 105px;
+    height: 35px;
+    left:47px;
+    top:120px;
+}
+
+.diente{
+    position: absolute;
+    background: white;
+    width:15px;
+    height:15px;
+    top:0px;
+}
+
+.diente:nth-child(1){
+    left: 20px;
+    
+}
+.diente:nth-child(2){
+    left: 35px;
+    
+}
+.diente:nth-child(3){
+    left: 50px;
+}
+.diente:nth-child(4){
+    left: 65px;
+}
+
+.cuerpo{
+    position: relative;
+    background-color: rgb(120, 0, 0);
+    width: 250px;
+    height: 300px;
+    left: 575px;
+    top: 50px;
+}
+
+.brazo_1,.brazo_2{
+    position: absolute;
+    background: rgb(233, 55, 11);
+    width: 140px;
+    height: 70px;
+}
+
+.brazo_1{
+    left: -40px;
+    top:20px;
+
+}
+.brazo_2{
+    right: -40px;
+    top:20px;
+}
+
+.dedo_1,.dedo_2{
+    position: absolute;
+    background: yellow;
+    width: 40px;
+    height:10px;
+}
+
+.dedo_1{
+    left:115px;
+}
+
+.dedo_1:nth-child(1){
+    top:15px;
+}
+.dedo_1:nth-child(2){
+    top:30px;
+}
+.dedo_1:nth-child(3){
+    top:45px;
+}
+
+
+
+.dedo_2{
+    left:-15px;
+}
+
+.dedo_2:nth-child(1){
+    top:15px;
+}
+.dedo_2:nth-child(2){
+    top:30px;
+}
+.dedo_2:nth-child(3){
+    top:45px;
+}
+
+
+.pierna_1, .pierna_2{
+    position: relative;
+    background:gray;
+    width: 60px;
+    height: 180px;
+
+}
+
+.pierna_1{
+    left:610px;
+    top:30px;
+}
+.pierna_2{
+    left: 730px;
+    top:-150px;
+}
+
+.zapato_1, .zapato_2{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background: purple;
+    top:150px;
+    left:-14px;
+}
+

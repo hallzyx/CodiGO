@@ -32,7 +32,7 @@ main h1{
     position: absolute;
     width: 365px;
     height: 117px;
-    background: linear-gradient(rgba(114, 154, 254, 0.295), rgba(114, 154, 254, 0.295)) ;
+    background: linear-gradient(rgba(63, 1, 220, 0.503), rgba(8, 43, 132, 0.579)) ;
     left:335px;
     top:520px;
     padding: 0px;
@@ -78,6 +78,29 @@ main h1{
     
 }
 
+
+.box_1 .fig{
+    position: relative;
+}
+.fig .form{
+    position: absolute;
+    width: 370px;
+    height: 50px;
+    background:rgba(0, 0, 255, 0.418);
+}
+
+.fig .form:nth-child(1){
+    border-radius: 0px 30px 0px 0px;
+    top: 298px;
+
+}
+
+.fig .form:nth-child(2){
+    border-radius: 0px 0px 0px 30px;
+    right:0px;
+}
+
+
 .box_1 .a{
 
     margin: 40px 0px 0px 0px;
@@ -89,6 +112,7 @@ main h1{
     padding: 20px 30px;
     font-size: 30px;
     box-shadow: 0px 5px 7px black;
+    transition: 0.3s;
 }
 .box_1 .a a:hover{
     background: purple;
@@ -185,11 +209,19 @@ main h1{
 }
 
 section .box_foto img{
+    border-radius: 15px;
     padding: 5px 5px;
     width: 170px;
-    height: 112px;   
+    height: 112px;  
+    transition: 0.2s; 
 }
 
+
+section .box_foto img:hover{
+    background: purple;
+    
+
+}
 section .box_foto .celda_h{
     display: flex;
     justify-content: center;
@@ -216,9 +248,22 @@ section .box_foto .celda_h{
 }
 
 section .box_cliente img{
-    width: 222px;
-    height: 114px;
-    padding:15px;
+    border-radius: 15px;
+    width: 182px;
+    height: 94px;
+    margin:0px;
+    border-radius: 15px;
+}
+section .box_cliente .wrap{
+    background:linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) ; 
+    margin:10px;
+    border-radius: 15px;
+    
+}
+
+section .box_cliente .wrap:hover img{
+    opacity: 0.3;
+   
 }
 
 
@@ -237,17 +282,37 @@ section .box_cliente img{
 }
 
 .contacto .info .celda{
+    
     display: flex;
     justify-content: center;
 }
 .contacto .info .celda input{
+    color:white;
     width: 343px;
     height: 49px;
     margin: 20px;
+    
+    border: purple 2px solid;
+    transition: 0.3s; 
+    
 }
+.contacto .info .celda input:focus{
+    background:#041a3f;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%)0.5;
+    
+      
+}
+
+
+
 .contacto .info .celda input::placeholder{
     padding: 0px 0px 0px 10px;
 }
+.contacto .info .celda input:focus::placeholder{
+    color:white;
+}
+
 
 .contacto .info .desc{
     display:flex;
@@ -255,18 +320,36 @@ section .box_cliente img{
     
 }
 .contacto .info .desc input{
+    
+    color:white;
     position: relative;
     margin: 20px 0px;
     width: 726px;
     height: 150px;
+    
+    border: purple 2px solid;
+    transition: 0.3s; 
+}
+
+.contacto .info .desc input:focus{
+    background:#041a3f;
+    border: 6px solid transparent;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%)0.5;
+}
+.contacto .info .celda input[type=number]::-webkit-inner-spin-button {
+    opacity: 0; 
+   
 }
 
 
 .contacto .info .desc input::placeholder{
+    color:white;
     position: absolute;
     top: 15px;
     left: 10px;
 }
+
+
 
 .contacto .envio{
     display: flex;
@@ -282,4 +365,16 @@ section .box_cliente img{
     color: white;
     background: #233451;
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+
+.contacto .envio input:hover{
+    position: relative;
+    background:#11016e;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%)0.5;
+   
 }

@@ -1,15 +1,9 @@
-console.log('¡zawardo!')
-        
-
-let numero= 12;
-
-console.log(typeof numero);
-
-let n1="17";
-console.log(parseInt (n1));
-console.log(typeof n1);
+//Declaracion de funcion
+function suma(nx,ny){
+    alert(n2+n3);
+}
 
 let n2=Number(prompt("Ingrese el primer numero:"));
 let n3=Number(prompt("Ingrese el segundo numero:"));
 
-alert(n2+n3);
+

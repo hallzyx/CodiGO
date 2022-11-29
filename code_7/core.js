@@ -56,3 +56,44 @@ PLAYER.setGenero("Seinen");
 console.log(PLAYER.getGenero());
 
 console.log(PLAYER.getCapitulos(PLAYER.setCapitulos(50)));
+
+
+let manhwa={
+    serie:[],
+
+
+
+    setManhwa: function(new_serie){
+        this.serie.push(new_serie);
+    },
+
+    getManhwa:function(comic){
+       return this.serie.find((el) => el.comic == comic);
+    }
+
+}
+
+manhwa.setManhwa({
+    comic:"Villain to kill",
+    scan:"Raven_Series",
+    genero:"shounen",
+    capitulos:75,
+});
+
+manhwa.setManhwa({
+    comic:"Jungle Juice",
+    scan:"Raven_Series",
+    genero:"Seinen",
+    capitulos:83,
+});
+
+manhwa.setManhwa({
+    comic:"Mercenario",
+    scan:"Hz_scan",
+    genero:"hidrogeno",
+    capitulos:112,
+})
+console.log(manhwa);
+
+console.log(manhwa.getManhwa("Mercenario"));
+

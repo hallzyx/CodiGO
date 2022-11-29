@@ -97,3 +97,24 @@ console.log(manhwa);
 
 console.log(manhwa.getManhwa("Mercenario"));
 
+
+
+let num=[1,2,3];
+console.log(num);
+console.log(num.reverse());
+num.reverse();
+console.log(num);
+
+
+ function unir_2palabras(p_1,p_2){
+    return p_1.concat(p_2);
+}
+
+let nom=[];
+let ape=[];
+nom.push(prompt("Indique su nombre"));
+ape.push(prompt("Indique su apellido"));
+
+let nombre=unir_2palabras(nom,ape);
+console.log('Mi nombre es ' +nombre[0]+ " " + nombre[1]);
+

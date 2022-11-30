@@ -11,11 +11,13 @@ let t=0;
 h1_2.onmouseover=function(){
     this.style.fontSize=
     Number(this.style.fontSize.replace("px",""))+1+"px";
+    this.style.background="black";
 }
 
 h1_2.onmouseout=function(){
     this.style.fontSize=
     Number(this.style.fontSize.replace("px",""))+(-1)+"px";
+    this.style.background="white";
 }
 
 h1.onclick=function(){
@@ -27,3 +29,7 @@ h1.onclick=function(){
     } 
     t++;
 }
+
+
+
+h1_2.style.background="blue";

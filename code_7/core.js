@@ -116,5 +116,55 @@ nom.push(prompt("Indique su nombre"));
 ape.push(prompt("Indique su apellido"));
 
 let nombre=unir_2palabras(nom,ape);
-console.log('Mi nombre es ' +nombre[0]+ " " + nombre[1]);
+
+let name_definitivo= (nombre[0][0].toUpperCase() + nombre[0].slice(1).toLowerCase())+ " " + (nombre[1][0].toUpperCase() + nombre[1].slice(1).toLowerCase())
+
+console.log('Mi nombre es ' + name_definitivo);
+
+
+
+function rastreador_letras(palabra,letra){
+    let token=0;
+    for(let t=0;t<palabra.length;t++){
+        if(palabra[t]==letra){
+            token++;
+        }
+    }
+    return token;
+}
+
+
+
+let palabra=prompt("Escriba la palabra deseada");
+let letra=prompt("Escriba la letra a buscar");
+
+
+let veces=rastreador_letras(palabra,letra);
+
+console.log("El numero de veces que la letra "+ letra+ " se repite en la palabra "+palabra+" es "+veces);
+
+
+
+
+
+
+
+function rastreador_letras_2(palabra,letra){
+    let fi=0;
+    let token=nombre_completo[0].map(function(el){
+        if(el==letra){
+            fi++;
+        }
+        return fi;
+    }
+ )}
+
+
+let nombre_completo=[];
+
+nombre_completo.push(prompt("Escriba la palabra deseada"));
+
+nombre_completo.push(prompt("Escriba la letra a buscar"));
+
+let respuesta=rastreador_letras_2(nombre_completo[0], nombre_completo[1]);
 

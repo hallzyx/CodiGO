@@ -27,7 +27,24 @@ function core_3(nod,enlace,texto){
 
 }
 
+function core_4(nod,n){
+    let token_3=document.querySelectorAll(nod);
+    token_3[n].parentElement.nextElementSibling.setAttribute("class", ".xd");
+    token_3[n].style.color="orange";
+    token_3[n].setAttribute("style","text-decoration:none; color:purple");
+
+}
+
 
 core_2("p","red","Arial",10);
 
 core_3("a", "https://google.com" ,"clickeame");
+
+core_4("a",1);
+
+
+
+let prob=document.querySelector("p");
+console.log(prob)
+console.log(prob.nextElementSibling);
+console.log(prob)

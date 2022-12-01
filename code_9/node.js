@@ -24,4 +24,12 @@ const elementos= lista.querySelectorAll("li");
 
 console.log(elementos[2].previousElementSibling);
 
-console.log(elementos[1].parentElement.parentElement.querySelector("h3"));
+console.log(elementos[0].parentElement.querySelector(".li_2"));
+
+console.log(elementos[0].closest("li"))
+
+console.log(elementos);
+
+console.log(elementos[3].closest(".li_2"))
+
+

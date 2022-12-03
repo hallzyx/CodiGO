@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+button{
+    color:rgb(248, 187, 19);
+    border: none;
+    text-decoration: none;
+    
+    width: 100%;
+    padding: 20px;
+    cursor:pointer;
+    font-size: 20px;
+    text-align: left;
+    transition: 0.3s;
+}
+
+
+.accordion{
+    border-radius: 15px;
+    border: 1px solid purple;
+}
+
+
+.accordion-item{
+    position: relative;
+}
+
+
+ .accordion-body{
+    display:list-item;
+    padding: 50px 50px;
+    display:none;
+    font-family: arial;
+    background: antiquewhite;
+    border-radius: 15px;
+ }
+
+button{
+    border-radius: 15px;
+}
+

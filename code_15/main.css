@@ -1,3 +1,4 @@
+/*Autor css: A'rise*/
 *{
     box-sizing: border-box;
 }
@@ -43,8 +44,12 @@ h2{
     margin-bottom: 15px;
     color:crimson;
     width: 170px;
+    
 }
+
+
 .wrap{
     display: flex;
     justify-content: center;
+    
 }

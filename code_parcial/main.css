@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(217,160,55)
+
+}
+header h2{
+    font-family: roboto;
+    font-size: 30px;
+    margin: 30px 30px;
+    
+}
+
+header ul{
+    color: rgb(102,50,2);
+    display: flex;
+    justify-content: space-between;
+    
+}
+header ul li{
+    
+    font-family: roboto;
+    font-size: 20px;
+    margin: 25px 25px;
+    padding:10px 15px;
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+
+header ul li:hover{
+
+    background-color:rgb(102,50,2); 
+    color: rgb(255, 166, 0);
+
+
+}
+header ul li:nth-child(3){
+    margin: 25px 65px 25px 25px;
+}
+
+
+/*Ponemos las medias querys[responsivos*/
+
+@media(min-width:501px) and (max-width:700px){
+
+    header{
+        color: rgb(102,50,2);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+
+    header ul li:nth-child(3){
+        margin: 25px 25px 25px 25px;
+    }
+
+
+
+
+    .log{
+        position: relative;
+        background-color: rgb(102,50,2);
+        color:rgb(255, 166, 0);
+        width: 100%;
+        text-align:center;
+    }
+
+
+
+    .block_1,.block_2{
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        background-color: rgb(175, 67, 0);
+        border: solid 2px rgb(255, 153, 0);
+    }
+
+    .block_1{
+        top:72px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .block_2{
+        top:72px;
+        right: 0px;
+        border-radius: 15px 0px 0px 15px;
+        
+    }
+
+}
+
+
+@media(max-width:500px){
+    header{
+        color: rgb(102,50,2);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        
+    }
+    header ul{
+        color: rgb(102,50,2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        display: none;
+        
+    }
+
+    
+
+    .wrap{
+        
+        color:white;
+    }
+    
+
+    header ul li{
+        border-right: none;
+        border-left: none;
+        
+        background-color: rgb(102,50,2);;
+        border-radius: 0px;
+        margin: 0px;
+        color: rgb(255, 166, 0);
+        padding: 15px;
+        
+        
+    }
+
+    header ul li:nth-child(3){
+        margin: 0px;
+        
+    }
+
+
+
+
+
+}
